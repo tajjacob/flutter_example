@@ -1,5 +1,5 @@
-import 'package:example/src/features/json_placeholder/todo_page.dart';
-import 'package:example/src/features/json_placeholder/todo_provider.dart';
+import 'package:example/src/features/json_placeholder/presentation/pages/todo_page.dart';
+import 'package:example/src/features/json_placeholder/presentation/provider/todo_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
