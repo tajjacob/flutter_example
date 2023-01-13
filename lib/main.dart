@@ -1,3 +1,4 @@
+import 'package:example/src/features/health/presentation/pages/health_page.dart';
 import 'package:example/src/features/json_placeholder/presentation/provider/todo_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const MicrosoftAuthPage(), // HealthPage(),
+        home: const HealthApp(), // HealthPage(),
         // home: const MicrosoftAuthPage(),
         navigatorKey: navigatorKey,
       ),
