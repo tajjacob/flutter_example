@@ -15,6 +15,8 @@ class Age extends StatelessWidget {
       children: [
         Text('- age: ${context.select<Dog, int>((Dog dog) => dog.age)}'),
         const SizedBox(height: 10),
+        Text('- number of babies: ${context.read<int>()}'),
+        const SizedBox(height: 10),
         ElevatedButton(
             onPressed: () {
               context.read<Dog>().grow();

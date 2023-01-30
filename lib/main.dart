@@ -1,4 +1,5 @@
 import 'package:example/src/features/json_placeholder/presentation/provider/todo_provider.dart';
+import 'package:example/src/features/provider_overview/data/models/babies_model.dart';
 import 'package:example/src/features/provider_overview/data/models/dog_model.dart';
 import 'package:example/src/features/provider_overview/presentation/pages/dog_page.dart';
 import 'package:flutter/material.dart';
@@ -20,8 +21,14 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => TodoProvider()),
         ChangeNotifierProvider<Dog>(
             create: (context) => Dog(name: 'Jack', breed: 'chihuahua', age: 3)),
-        // Provider<Dog>(
-        //     create: (context) => Dog(name: 'Jack', breed: 'chihuahua', age: 3)),
+        FutureProvider(
+          create: (context) {
+            final int dogAge = context.read<Dog>().age;
+            final babies = Babies(age: dogAge);
+            return babies.getBabies();
+          },
+          initialData: 0,
+        ),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
