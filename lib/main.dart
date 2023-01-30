@@ -1,10 +1,10 @@
 import 'package:example/src/features/json_placeholder/presentation/provider/todo_provider.dart';
 import 'package:example/src/features/provider_overview/data/models/dog_model.dart';
+import 'package:example/src/features/provider_overview/presentation/pages/dog_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'src/features/microsoft_auth/presentation/pages/microsoft_auth_page.dart';
-import 'src/features/provider_overview/presentation/pages/dog_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,15 +18,17 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => TodoProvider()),
-        Provider<Dog>(
-            create: (context) => Dog(name: 'Sun', breed: 'bulldog', age: 3)),
+        ChangeNotifierProvider<Dog>(
+            create: (context) => Dog(name: 'Jack', breed: 'chihuahua', age: 3)),
+        // Provider<Dog>(
+        //     create: (context) => Dog(name: 'Jack', breed: 'chihuahua', age: 3)),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const DogPage(), // HealthPage(),
+        home: const DogPage(), // HealthPage(),DogPage
         // home: const MicrosoftAuthPage(),
         navigatorKey: navigatorKey,
       ),

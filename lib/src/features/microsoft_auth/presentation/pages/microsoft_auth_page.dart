@@ -41,19 +41,19 @@ class MicrosoftAuthPageState extends State<MicrosoftAuthPage> {
           ),
           ListTile(
             leading: const Icon(Icons.launch),
-            title: const Text('Login${kIsWeb ? ' (web popup)' : ''}'),
+            title: const Text('Login'),
             onTap: () {
               login(false);
             },
           ),
-          if (kIsWeb)
-            ListTile(
-              leading: const Icon(Icons.launch),
-              title: const Text('Login (web redirect)'),
-              onTap: () {
-                login(true);
-              },
-            ),
+          // if (kIsWeb)
+          //   ListTile(
+          //     leading: const Icon(Icons.launch),
+          //     title: const Text('Login (web redirect)'),
+          //     onTap: () {
+          //       login(true);
+          //     },
+          //   ),
           ListTile(
             leading: const Icon(Icons.delete),
             title: const Text('Logout'),
