@@ -1,10 +1,7 @@
-import 'package:example/src/features/json_placeholder/presentation/provider/todo_provider.dart';
-import 'package:example/src/features/provider_overview/data/models/babies_model.dart';
-import 'package:example/src/features/provider_overview/data/models/dog_model.dart';
 import 'package:example/src/features/provider_overview/presentation/pages/dog_page.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
+import 'src/core/multi_providers.dart';
 import 'src/features/microsoft_auth/presentation/pages/microsoft_auth_page.dart';
 
 void main() {
@@ -16,20 +13,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => TodoProvider()),
-        ChangeNotifierProvider<Dog>(
-            create: (context) => Dog(name: 'Jack', breed: 'chihuahua', age: 3)),
-        FutureProvider(
-          create: (context) {
-            final int dogAge = context.read<Dog>().age;
-            final babies = Babies(age: dogAge);
-            return babies.getBabies();
-          },
-          initialData: 0,
-        ),
-      ],
+    return MultiProviders(
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
