@@ -18,16 +18,20 @@ class _DogPageState extends State<DogPage> {
       appBar: AppBar(
         title: const Text('Provider Overview'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('- name: ${context.watch<Dog>().name}'),
-            const SizedBox(height: 10),
-            const BreedAndAge(),
-          ],
-        ),
+      body: Consumer<Dog>(
+        builder: (context, dog, child) {
+          return Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('- name: ${dog.name}'),
+                const SizedBox(height: 10),
+                const BreedAndAge(),
+              ],
+            ),
+          );
+        },
       ),
     );
   }
