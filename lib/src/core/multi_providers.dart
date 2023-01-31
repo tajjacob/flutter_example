@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../features/json_placeholder/presentation/provider/todo_provider.dart';
-import '../features/provider_overview/data/models/babies_model.dart';
-import '../features/provider_overview/data/models/dog_model.dart';
+import '../features/provider_overview/presentation/provider/babies_provider.dart';
+import '../features/provider_overview/presentation/provider/dog_provider.dart';
 
 class MultiProviders extends StatelessWidget {
   const MultiProviders({

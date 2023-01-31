@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../data/models/dog_model.dart';
+import '../provider/dog_provider.dart';
 import 'age_widget.dart';
 
 class BreedAndAge extends StatelessWidget {
