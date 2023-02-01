@@ -16,16 +16,17 @@ class _DogPageState extends State<DogPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Provider Overview'),
+        title: const Text('Provider Overview - 17. Selector'),
       ),
-      body: Consumer<Dog>(
-        builder: (context, dog, child) {
+      body: Selector<Dog, String>(
+        selector: (context, dog) => dog.name,
+        builder: (context, String name, child) {
           return Center(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('- name: ${dog.name}'),
+                Text('- name: $name'),
                 const SizedBox(height: 10),
                 const BreedAndAge(),
               ],

@@ -11,12 +11,13 @@ class BreedAndAge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<Dog>(
-      builder: (_, dog, __) {
+    return Selector<Dog, String>(
+      selector: (context, dog) => dog.breed,
+      builder: (_, String breed, __) {
         return Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('- breed: ${dog.breed}'),
+            Text('- breed: $breed'),
             const SizedBox(height: 10),
             const Age(),
           ],

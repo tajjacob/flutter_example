@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'src/core/multi_providers.dart';
 import 'src/features/microsoft_auth/presentation/pages/microsoft_auth_page.dart';
-import 'src/features/provider_overview/presentation/pages/tutorial_16_page.dart';
+import 'src/features/provider_overview/presentation/pages/dog_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const Tutorial16Page(), // HealthPage(),DogPage
+        home: const DogPage(), // HealthPage(),DogPage Tutorial16Page
         // home: const MicrosoftAuthPage(),
         navigatorKey: navigatorKey,
       ),
