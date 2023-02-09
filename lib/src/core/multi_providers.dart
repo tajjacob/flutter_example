@@ -1,3 +1,4 @@
+import 'package:example/src/features/provider_overview/presentation/provider/counter_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -34,6 +35,9 @@ class MultiProviders extends StatelessWidget {
               return babies.bark();
             },
             initialData: 'Bark 0 times'),
+        ChangeNotifierProvider<Counter>(
+          create: (context) => Counter(),
+        ),
       ],
       child: child,
     );
