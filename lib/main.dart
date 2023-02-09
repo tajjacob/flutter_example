@@ -1,3 +1,4 @@
+import 'package:example/src/core/page_routes.dart';
 import 'package:flutter/material.dart';
 
 import 'src/core/multi_providers.dart';
@@ -19,8 +20,9 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const Tutorial19Page(), // HealthPage(),DogPage Tutorial16Page
-        // home: const MicrosoftAuthPage(),
+        routes: routes(),
+        home: const Tutorial19Page(),
+        // home: const Tutorial19Page(), // HealthPage(),DogPage Tutorial16Page
         navigatorKey: navigatorKey,
       ),
     );

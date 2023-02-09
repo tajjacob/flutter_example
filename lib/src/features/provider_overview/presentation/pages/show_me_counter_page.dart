@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../provider/counter_provider.dart';
 
 class ShowMeCounterPage extends StatelessWidget {
+  static const String routeName = '/show-me-counter';
   const ShowMeCounterPage({Key? key}) : super(key: key);
 
   @override

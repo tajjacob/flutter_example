@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../provider/counter_provider.dart';
-import 'show_me_counter_page.dart';
 
 class Tutorial19Page extends StatelessWidget {
+  static const String routeName = '/tutorial-19';
   const Tutorial19Page({Key? key}) : super(key: key);
 
   @override
@@ -19,16 +19,9 @@ class Tutorial19Page extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) {
-                      // return const ShowMeCounterPage();
-                      return ChangeNotifierProvider.value(
-                        value: context.read<Counter>(),
-                        child: const ShowMeCounterPage(),
-                      );
-                    },
-                  ),
+                Navigator.pushNamed(
+                  context,
+                  '/show-me-counter',
                 );
               },
               child: const Text('Show me counter'),

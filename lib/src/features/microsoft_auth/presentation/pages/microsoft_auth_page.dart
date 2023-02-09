@@ -1,11 +1,11 @@
 import 'package:aad_oauth/aad_oauth.dart';
 import 'package:aad_oauth/model/config.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 
 class MicrosoftAuthPage extends StatefulWidget {
+  static const String routeName = '/microsoft';
   const MicrosoftAuthPage({
     Key? key,
     // required this.title,
