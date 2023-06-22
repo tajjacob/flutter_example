@@ -1,7 +1,9 @@
-import 'package:example/src/features/json_placeholder/presentation/pages/todo_page.dart';
-import 'package:example/src/features/json_placeholder/presentation/provider/todo_provider.dart';
+import 'package:example/src/core/page_routes.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+
+import 'src/core/multi_providers.dart';
+import 'src/features/microsoft_auth/presentation/pages/microsoft_auth_page.dart';
+import 'src/features/provider_overview/presentation/pages/tutorial_19_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,14 +14,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (BuildContext context) => TodoProvider(),
+    return MultiProviders(
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const ToDoPage(),
+        routes: routes(),
+        home: const Tutorial19Page(),
+        // home: const Tutorial19Page(), // HealthPage(),DogPage Tutorial16Page
+        navigatorKey: navigatorKey,
       ),
     );
   }
@@ -96,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
