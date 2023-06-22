@@ -135,11 +135,11 @@ class HealthAppState extends State<HealthApp> {
       HealthDataAccess.READ_WRITE,
       // HealthDataAccess.READ_WRITE,
     ];
-    bool? hasPermissions =
-        await HealthFactory.hasPermissions(types, permissions: rights);
-    if (hasPermissions == false) {
-      await health.requestAuthorization(types, permissions: permissions);
-    }
+    // bool? hasPermissions =
+    //     await HealthFactory.hasPermissions(types, permissions: rights);
+    // if (hasPermissions == false) {
+    await health.requestAuthorization(types, permissions: permissions);
+    // }
 
     // Store a count of steps taken
     _nofSteps = math.Random().nextInt(10);
@@ -247,10 +247,10 @@ class HealthAppState extends State<HealthApp> {
           if (p.value is WorkoutHealthValue) {
             return ListTile(
               title: Text(
-                  "${p.typeString}: ${(p.value as WorkoutHealthValue).totalEnergyBurned} ${(p.value as WorkoutHealthValue).totalEnergyBurnedUnit?.typeToString()}"),
+                  "${p.typeString}: ${(p.value as WorkoutHealthValue).totalEnergyBurned} ${(p.value as WorkoutHealthValue).totalEnergyBurnedUnit?.toString()}"),
               trailing: Text((p.value as WorkoutHealthValue)
                   .workoutActivityType
-                  .typeToString()),
+                  .toString()),
               subtitle: Text('${p.dateFrom} - ${p.dateTo}'),
             );
           }
