@@ -6,7 +6,7 @@ import '../features/provider_overview/presentation/pages/tutorial_19_page.dart';
 
 Map<String, WidgetBuilder> routes() {
   return {
-    '/tutorial-19': (context) => Tutorial19Page(),
+    '/tutorial-19': (context) => const Tutorial19Page(),
     '/show-me-counter': (context) => const ShowMeCounterPage(),
     '/microsoft': (context) => const MicrosoftAuthPage(),
   };

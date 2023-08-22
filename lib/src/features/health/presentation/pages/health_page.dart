@@ -121,13 +121,13 @@ class HealthAppState extends State<HealthApp> {
       // Uncomment these lines on iOS - only available on iOS
       // HealthDataType.AUDIOGRAM,
     ];
-    final rights = [
-      HealthDataAccess.WRITE,
-      HealthDataAccess.WRITE,
-      HealthDataAccess.WRITE,
-      HealthDataAccess.WRITE,
-      // HealthDataAccess.WRITE
-    ];
+    // final rights = [
+    //   HealthDataAccess.WRITE,
+    //   HealthDataAccess.WRITE,
+    //   HealthDataAccess.WRITE,
+    //   HealthDataAccess.WRITE,
+    //   // HealthDataAccess.WRITE
+    // ];
     final permissions = [
       HealthDataAccess.READ_WRITE,
       HealthDataAccess.READ_WRITE,

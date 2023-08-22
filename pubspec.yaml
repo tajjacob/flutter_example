@@ -14,11 +14,15 @@ dependencies:
 
   cupertino_icons: ^1.0.5
 
-  aad_oauth: ^0.4.4
-  health: ^6.0.0
-  flutter_local_notifications: ^14.1.1
+#  aad_oauth: ^0.4.4 # Uncomment this line if there is new version of aad_oauth
+  aad_oauth:
+    git:
+      url: https://github.com/tajjacob/aad_oauth.git
+      ref: upstream/2023-33-upgrade-plugins+add-param
+  health: ^8.0.0
+  flutter_local_notifications: ^15.1.0+1
   health_kit: ^0.0.6
-  permission_handler: ^10.3.0
+  permission_handler: ^10.4.3
   provider: ^6.0.5
 
 
@@ -26,7 +30,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^2.0.1
+  flutter_lints: ^2.0.2
 
 flutter:
 

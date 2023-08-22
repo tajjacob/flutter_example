@@ -18,11 +18,15 @@ class MicrosoftAuthPage extends StatefulWidget {
 
 class MicrosoftAuthPageState extends State<MicrosoftAuthPage> {
   static final Config config = Config(
-      tenant: 'ea5215fb-7987-4a9d-994e-aeb1095dec3e',
-      clientId: 'f621f566-a715-475d-ba64-3cf409fa56e9',
-      scope: 'api://f621f566-a715-475d-ba64-3cf409fa56e9/Read',
-      navigatorKey: navigatorKey,
-      loader: const SizedBox());
+    tenant: 'ea5215fb-7987-4a9d-994e-aeb1095dec3e',
+    clientId: 'f621f566-a715-475d-ba64-3cf409fa56e9',
+    scope: 'api://f621f566-a715-475d-ba64-3cf409fa56e9/Read',
+    navigatorKey: navigatorKey,
+    loader: const SizedBox(),
+    appBar: AppBar(
+      title: const Text('Microsoft Auth'),
+    ),
+  );
   final AadOAuth oauth = AadOAuth(config);
 
   @override
@@ -36,7 +40,7 @@ class MicrosoftAuthPageState extends State<MicrosoftAuthPage> {
           ListTile(
             title: Text(
               'AzureAD OAuth',
-              style: Theme.of(context).textTheme.headline5,
+              style: Theme.of(context).textTheme.headlineSmall,
             ),
           ),
           ListTile(
