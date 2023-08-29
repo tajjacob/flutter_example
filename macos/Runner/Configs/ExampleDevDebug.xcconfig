@@ -1,0 +1,7 @@
+#include "../../Flutter/ExampleDevDebug.xcconfig"
+#include "Warnings.xcconfig"
+
+FLUTTER_TARGET=lib/main_ExampleDev.dart
+ASSET_PREFIX=ExampleDev
+BUNDLE_NAME=Example App - Dev
+BUNDLE_DISPLAY_NAME=Example App - Dev

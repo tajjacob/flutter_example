@@ -1,0 +1,7 @@
+#include "../../Flutter/ExampleStagingDebug.xcconfig"
+#include "Warnings.xcconfig"
+
+FLUTTER_TARGET=lib/main_ExampleStaging.dart
+ASSET_PREFIX=ExampleStaging
+BUNDLE_NAME=Example App - Staging
+BUNDLE_DISPLAY_NAME=Example App - Staging

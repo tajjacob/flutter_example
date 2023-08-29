@@ -1,0 +1,48 @@
+app:
+  android:
+    flavorDimensions: "flavor-type"
+
+flavors:
+  ExampleDev:
+    app:
+      name: "Example App - Dev"
+
+    android:
+      applicationId: "com.example.example_dev"
+      icon: "assets/logo/example_dev.png"
+    ios:
+      bundleId: "com.example.example.dev"
+      icon: "assets/logo/example_dev.png"
+    macos:
+      bundleId: "com.example.example.dev"
+      icon: "assets/logo/example_dev.png"
+
+  ExampleStaging:
+    app:
+      name: "Example App - Staging"
+
+    android:
+      applicationId: "com.example.example.staging"
+      icon: "assets/logo/example_stg.png"
+    ios:
+      bundleId: "com.example.example.staging"
+      icon: "assets/logo/example_stg.png"
+    macos:
+      bundleId: "com.example.example.staging"
+      icon: "assets/logo/example_dev.png"
+
+  Example:
+    app:
+      name: "Example App"
+
+    android:
+      applicationId: "com.example.example"
+      icon: "assets/logo/example_prod.png"
+    ios:
+      bundleId: "com.example.example"
+      icon: "assets/logo/example_prod.png"
+    macos:
+      bundleId: "com.example.example"
+      icon: "assets/logo/example_prod.png"
+
+ide: idea
