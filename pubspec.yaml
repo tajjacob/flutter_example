@@ -20,7 +20,7 @@ dependencies:
       url: https://github.com/tajjacob/aad_oauth.git
       ref: upstream/2023-33-upgrade-plugins+add-param
   health: ^8.0.0
-  flutter_local_notifications: ^15.1.0+1
+  flutter_local_notifications: ^15.1.1
   health_kit: ^0.0.6
   permission_handler: ^10.4.3
   provider: ^6.0.5

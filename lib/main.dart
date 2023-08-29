@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'src/core/multi_providers.dart';
 import 'src/features/microsoft_auth/presentation/pages/microsoft_auth_page.dart';
+import 'src/features/provider_todo/presentation/pages/todo_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,12 +16,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProviders(
       child: MaterialApp(
+        debugShowCheckedModeBanner: true,
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
         routes: routes(),
-        home: const MicrosoftAuthPage(),
+        home: const TodoPage(),
         // home: const Tutorial19Page(), // HealthPage(),DogPage Tutorial16Page
         navigatorKey: navigatorKey,
       ),
