@@ -24,6 +24,7 @@ dependencies:
   health_kit: ^0.0.6
   permission_handler: ^10.4.3
   provider: ^6.0.5
+  d_chart: ^2.6.2
 
 
 dev_dependencies:
@@ -35,4 +36,9 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+
+
+  assets:
+    - assets/
+    - assets/json/
 

@@ -2,6 +2,7 @@ import 'package:example/src/features/provider_overview/presentation/provider/cou
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../features/chart/presentation/providers/steps_provider.dart';
 import '../features/json_placeholder/presentation/provider/todo_provider.dart';
 import '../features/provider_overview/presentation/provider/babies_provider.dart';
 import '../features/provider_overview/presentation/provider/dog_provider.dart';
@@ -37,6 +38,9 @@ class MultiProviders extends StatelessWidget {
             initialData: 'Bark 0 times'),
         ChangeNotifierProvider<Counter>(
           create: (context) => Counter(),
+        ),
+        ChangeNotifierProvider<StepsProvider>(
+          create: (context) => StepsProvider(),
         ),
       ],
       child: child,

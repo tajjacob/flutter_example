@@ -1,0 +1,119 @@
+{
+  "averageSteps": 5956,
+  "averageDistance": 2.50,
+  "averageCalories": 624,
+  "stepsByDay": [
+    {
+      "id": 2921,
+      "day": "Monday",
+      "date": "2023-04-24T23:59:59",
+      "steps": 4155
+    },
+    {
+      "id": 2922,
+      "day": "Tuesday",
+      "date": "2023-04-25T23:59:59",
+      "steps": 6204
+    },
+    {
+      "id": 2923,
+      "day": "Wednesday",
+      "date": "2023-04-26T23:59:59",
+      "steps": 7458
+    },
+    {
+      "id": 2924,
+      "day": "Thursday",
+      "date": "2023-04-27T23:59:59",
+      "steps": 4176
+    },
+    {
+      "id": 2925,
+      "day": "Friday",
+      "date": "2023-04-28T23:59:59",
+      "steps": 6246
+    },
+    {
+      "id": 2926,
+      "day": "Saturday",
+      "date": "2023-04-29T23:59:59",
+      "steps": 7500
+    }
+  ],
+  "distanceByDay": [
+    {
+      "id": 2921,
+      "day": "Monday",
+      "date": "2023-04-24T23:59:59",
+      "distance": 0.68
+    },
+    {
+      "id": 2922,
+      "day": "Tuesday",
+      "date": "2023-04-25T23:59:59",
+      "distance": 2.79
+    },
+    {
+      "id": 2923,
+      "day": "Wednesday",
+      "date": "2023-04-26T23:59:59",
+      "distance": 3.33
+    },
+    {
+      "id": 2924,
+      "day": "Thursday",
+      "date": "2023-04-27T23:59:59",
+      "distance": 1.78
+    },
+    {
+      "id": 2925,
+      "day": "Friday",
+      "date": "2023-04-28T23:59:59",
+      "distance": 2.85
+    },
+    {
+      "id": 2926,
+      "day": "Saturday",
+      "date": "2023-04-29T23:59:59",
+      "distance": 3.54
+    }
+  ],
+  "caloriesByDay": [
+    {
+      "id": 2921,
+      "day": "Monday",
+      "date": "2023-04-24T23:59:59",
+      "calories": 217
+    },
+    {
+      "id": 2922,
+      "day": "Tuesday",
+      "date": "2023-04-25T23:59:59",
+      "calories": 353
+    },
+    {
+      "id": 2923,
+      "day": "Wednesday",
+      "date": "2023-04-26T23:59:59",
+      "calories": 392
+    },
+    {
+      "id": 2924,
+      "day": "Thursday",
+      "date": "2023-04-27T23:59:59",
+      "calories": 244
+    },
+    {
+      "id": 2925,
+      "day": "Friday",
+      "date": "2023-04-28T23:59:59",
+      "calories": 358
+    },
+    {
+      "id": 2926,
+      "day": "Saturday",
+      "date": "2023-04-29T23:59:59",
+      "calories": 2183
+    }
+  ]
+}
